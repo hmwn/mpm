@@ -11,25 +11,61 @@
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 	<meta name="viewport" content="width=device-width" />
 
+	
 	<!-- Bootstrap core CSS -->
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 
 	<!--  Light Bootstrap Table core CSS    -->
-<link href="assets/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
+	<link href="assets/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
 
 	<!--     Fonts and icons     -->
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
-	<link href="inc/font.css" rel="stylesheet" />
-	<link href="assets/css/brand.css" rel="stylesheet" />
+
+	<style type="text/css">
+		.navbar {
+			background-color: orange;
+		}
+		.navbar-right	{
+			margin-right: 0px; 
+		}
+		.navbar-left, .navbar-right {
+			margin-top: 5px;
+		}
+		.navbar-brand {
+		  transform: translateX(-50%);
+		  left: 50%;
+		  position: absolute;
+		}
+
+
+		/* DEMO example styles for logo image */
+		.navbar-brand {
+		  padding: 0px !important;
+		}
+		.navbar-brand>img {
+		  height: 100%;
+		  width: auto;
+		  padding: 4px 0px;
+		}
+	</style>
 </head>
 <body>
 
-		 <div id="navbar" class="navbar navbar-fixed-top" style="background-color:orange; padding-top:15px; width: 100%;">
-					<a href="#" class="simple-text" style="color:white; margin-top: 80px;">
-						<strong>Assesment</strong>Sample
-						<!--<img src="assets/img/MPM_Logo Group_White.png" class="img-responsive" alt="logo">-->
-						<div class="timer" style="float:right;  margin-right: 20px;">timer</div>
-					</a>
-				</div>
+<!-- <div class="wrapper"> -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img src="assets/img/MPM_Logo Group_White.png"></a>
+    </div>
+
+    <div class="navbar-left">
+    	<h5><strong>Assesment</strong>Sample</h5>
+    </div>
+    <div class="navbar-right">
+    	<h5>timer</h5>
+    </div>
+  </div><!-- /.container-fluid -->
+</nav>
